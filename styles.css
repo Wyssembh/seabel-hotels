@@ -48,15 +48,52 @@ a {
 }
 
 /* Header Styles */
+/* cacher la checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* menu caché par défaut */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    padding-top: 80px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+/* menu visible quand on clique sur MENU */
+.menu-toggle:checked + .side-menu {
+    left: 0;
+}
+
+/* style des liens */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px 20px;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: var(--color-header-bg);
     z-index: 1000;
     padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -154,7 +191,6 @@ a {
 .logo {
     height: 50px;
     display: block;
-    margin-bottom: 8px;
 }
 
 .app-badges {
@@ -226,12 +262,93 @@ a {
     color: var(--color-primary);
 }
 
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100vh;
+    background: var(--color-header-bg);
+    transition: left 0.4s ease;
+    overflow-y: auto;
+    padding: 100px 40px 40px;
+    z-index: 998;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-toggle:checked ~ .side-menu {
+    left: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: var(--color-white);
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.close-menu:hover {
+    color: var(--color-primary);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 997;
+}
+
+.menu-toggle:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.side-menu ul {
+    list-style: none;
+}
+
+.side-menu li {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.side-menu li:last-child {
+    border-bottom: none;
+}
+
+.side-menu a {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: block;
+    text-transform: uppercase;
+}
+
+.side-menu a:hover {
+    color: var(--color-primary);
+    padding-left: 10px;
+}
+
 /* Hero Slider */
 .hero-slider {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    margin-top: 90px;
+    margin-top: 0;
 }
 
 .hero-slider input[type="radio"] {
@@ -242,17 +359,28 @@ a {
     display: flex;
     height: 100%;
     position: relative;
+    width: 300%;
+    transition: transform 0.6s ease-in-out;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-66.666%);
 }
 
 .slide {
-    position: absolute;
-    width: 100%;
+    width: 33.333%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    pointer-events: none;
+    flex-shrink: 0;
 }
 
 .slide::before {
@@ -265,11 +393,50 @@ a {
     background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%);
 }
 
-#slide1:checked ~ .slides .slide:nth-child(1),
-#slide2:checked ~ .slides .slide:nth-child(2),
-#slide3:checked ~ .slides .slide:nth-child(3) {
-    opacity: 1;
-    pointer-events: auto;
+/* Slider Arrows */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: var(--color-white);
+    cursor: pointer;
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.slider-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+#slide1:checked ~ .arrow-right-1 {
+    display: flex;
+}
+
+#slide2:checked ~ .arrow-left-2 {
+    display: flex;
+}
+
+#slide2:checked ~ .arrow-right-2 {
+    display: flex;
+}
+
+#slide3:checked ~ .arrow-left-3 {
+    display: flex;
 }
 
 .slide-content {
