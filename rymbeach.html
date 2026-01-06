@@ -3,262 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seabel Rym Beach Djerba - Le charme discret d'un club authentique</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <style>
-        /* Specific overrides or additions for the combined page */
-        .hero {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/9776205.jpg?k=70cc4bbac62d2978f27a0c1a1c62c14b8157d55f65cc944f29ed426d4612bcfe&o=');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .hero-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .hero-logo {
-            width: 160px;
-            height: auto;
-        }
-
-        .hero-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 100px;
-        }
-
-        .hero-heading {
-            font-size: 72px;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-
-        .hero-sub {
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-        }
-
-        .wave-sigle {
-            width: 100px;
-            margin: 20px 0;
-        }
-
-        .stars {
-            color: #79CBB1;
-            margin-bottom: 10px;
-        }
-
-        /* Feature Cards Grid */
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .feature-item {
-            position: relative;
-            height: 500px;
-            overflow: hidden;
-            transition: transform 0.5s;
-        }
-
-        .feature-item:hover {
-            transform: scale(1.02);
-        }
-
-        .feature-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.7s;
-        }
-
-        .feature-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .feature-overlay {
-            position: absolute;
-            bottom: 40px;
-            left: 40px;
-            right: 40px;
-            background: white;
-            padding: 35px;
-            text-align: left;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .testimonials-list {
-            max-width: 850px;
-            margin: 0 auto 60px;
-        }
-
-        .testimonial-item {
-            margin-bottom: 30px;
-        }
-
-        .tripadvisor-logo {
-            width: 112px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Seabel Rym Beach- Hôtel familial à Djerba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styleAladin.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <header class="hero-header">
-            <div class="header-left">
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-overlay"></label>
-                <nav class="side-menu">
-                    <label for="menu-toggle" class="close-menu">&times;</label>
-                    <ul>
-                        <li><a href="rymbeach.html">Seabel Rym Beach</a></li>
-                        <li><a href="aladin.html">SeabelAladin</a></li>
-                        <li><a href="alhambra.html">Seabel Alhambra Beach Golf & Spa</a></li>
-                        <li><a href="#press">Presse & News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#protocol">Protocole sanitaire</a></li>
-                    </ul>
-                </nav>
-                <label for="menu-toggle" class="menu-button">
-                    <span class="hamburger"></span>
-                    <span class="menu-text">MENU</span>
-                </label>
-                
-                <div class="language-selector">
-                    <input type="checkbox" id="lang-toggle" class="lang-toggle">
-                    <input type="radio" name="lang" id="lang-fr" class="lang-radio" checked>
-                    <input type="radio" name="lang" id="lang-en" class="lang-radio">
-                    <input type="radio" name="lang" id="lang-deu" class="lang-radio">
-                    <label for="lang-toggle" class="current-lang">
-                        <span class="lang-fr-text">FR</span>
-                        <span class="lang-en-text">EN</span>
-                        <span class="lang-deu-text">DEU</span>
-                    </label>
-                    <ul class="lang-menu">
-                        <li><label for="lang-fr">FR</label></li>
-                        <li><label for="lang-en">EN</label></li>
-                        <li><label for="lang-deu">DEU</label></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <a href="#">
-                <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/004a8af6-c0a7-4725-9efc-ee8078784907-seabelhotels-com/assets/images/seabel_rym_logo-11.svg" alt="Seabel Rym Beach Logo" class="hero-logo">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-close" onclick="toggleMenu()">&times;</div>
+        <h2 class="menu-title">MENU PRINCIPAL</h2>
+        <nav class="mobile-nav">
+            <a href="rymbeach.html">Seabel Rym Beach</a>
+            <a href="aladin.html">Seabel Aladin</a>
+            <a href="alhambra.html">Seabel Alhambra Beach Golf & Spa</a>
+            <a href="#">Activités & Divertissements</a>
+            <a href="#" class="special-offer">Offres Spéciales</a>
+            <a href="#">SPA & Bien-être</a>
+            <a href="#">Photos & Vidéos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <div class="hamburger"><span></span><span></span><span></span></div>
+                <span>Menu</span>
+            </button>
+            <a href="#" class="logo">
+                <img src="/assets/rym.png" alt="Seabel Aladin">
             </a>
-
-            <div style="width:100px;display: flex; gap: 10px;">
-                <img src="/assets/wifi.png" alt="Google Play" height="33">
+            <div class="header-right">
+               
+                <a href="https://www.booking.com/hotel/tn/seabel-rym-beach.fr.html?aid=356980&label=gog235jc-10CAso4gFCEHNlYWJlbC1yeW0tYmVhY2hIDVgDaOIBiAEBmAEzuAEZyAEM2AED6AEB-AEBiAIBqAIBuALXps_KBsACAdICJGIxM2U1Yjg1LWViOTMtNDkzMS04MDZlLTc3MjJlYjU2YjhmYdgCAeACAQ&sid=dec1ddc949395e96f713556b2f353f59&checkin=2026-01-08&checkout=2026-02-03&dest_id=42101&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1767731820&srpvid=3a5990f206680159&type=total&ucfs=1&#no_availability_msg" class="btn-book-top">Réserver</a>
             </div>
-        </header>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://assets.hotelplan.com/myassets/webimages/114/1147436.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-heading">Le charme discret</h1>
-            <div class="hero-sub">D J E R B A</div>
-            <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/004a8af6-c0a7-4725-9efc-ee8078784907-seabelhotels-com/assets/images/seabel_rym_sigle_blanc-10.svg" alt="Wave" class="wave-sigle">
-            <div class="stars">★★★★</div>
-            <div class="hero-sub">TUNISIA</div>
+            <div class="hero-sigle-box">
+                <div class="hero-location top">Djerba</div>
+                <div class="hero-location bottom">Tunisia</div>
+            </div>
+            <h1 class="slide-title">Hôtel familial<br>à Djerba</h1>
+            <p class="hero-subtitle">Séjournez au cœur d'un jardin méditerranéen</p>
         </div>
 
+        <!-- Booking Bar -->
+        <div class="booking-bar-container">
+            <div class="booking-bar">
+                <div class="booking-field">
+                    <label>Arrivée</label>
+                    <div class="val"><span class="num">03</span> <span class="month">Janvier</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Départ</label>
+                    <div class="val"><span class="num">04</span> <span class="month">Janvier</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Chambres</label>
+                    <div class="val"><span class="num">01</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Adultes</label>
+                    <div class="val"><span class="num">02</span></div>
+                </div>
+                <button class="booking-submit">Vérifier la disponibilité</button>
+            </div>
+        </div>
     </section>
 
-    <!-- INTRO SECTION -->
-    <section class="section-padding">
-        <div class="container" style="display: flex; gap: 60px; align-items: flex-start; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px; text-align: right;">
-                <span class="category-label">Seabel Rym Beach Djerba</span>
-                <h2 class="section-title">Le charme discret d’un club authentique</h2>
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container intro-grid">
+            <div class="intro-left">
+                <span class="section-subtitle">Seabel Rym Beach</span>
+                <h2 class="section-title">Le charme discret d’un <br><span class="highlight">club authentique</span></h2>
             </div>
-            <div style="flex: 1.2; min-width: 300px; color: #777777;">
+            <div class="intro-right">
                 <p>Sur la côte nord de l’île et au pied du phare de Taguermess, le Seabel Rym Beach Djerba s’étend dans une palmeraie de 11 hectares, au bord d’une magnifique plage de sable fin. Il est situé à 8 km de Midoun, à 22 km de Houmt Souk, capitale de l’île de Djerba, à 29 km de l’aéroport international de Djerba-Zarzis (DJE) et à 5 km du Djerba Golf Club (27 trous).</p>
+                <a href="#" class="btn-text">Découvrir l'hôtel <span>&rarr;</span></a>
             </div>
         </div>
     </section>
 
-    <!-- FEATURES SECTION -->
-    <section class="section-padding teal-section" style="position: relative; overflow: hidden;">
-        <div class="wave-pattern" style="position: absolute; top: 0; left: 0; transform: rotate(180deg); opacity: 0.3;"></div>
-        
-        <div class="container" style="text-align: center; position: relative; z-index: 2;">
-            <span class="category-label" style="color: rgba(255,255,255,0.8);">Découvrez l'hôtel</span>
-            <h2 class="section-title" style="color: white; max-width: 800px; margin: 0 auto 60px;">Un cadre qui respire l’authenticité et la convivialité</h2>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Nos atouts</span>
+                <h2 class="section-title">Pour un séjour inoubliable</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Plage privée</h3>
+                    <p>Une magnifique plage de sable fin accessible directement depuis l'hôtel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Piscines</h3>
+                    <p>Plusieurs piscines dont une piscine à débordement avec vue sur la mer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>SPA & Bien-être</h3>
+                    <p>Un espace dédié à la relaxation avec soins, hammam et sauna.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restauration</h3>
+                    <p>Plusieurs restaurants et bars pour varier les plaisirs culinaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/004a8af6-c0a7-4725-9efc-ee8078784907-seabelhotels-com/assets/images/rym_beach_activites-20.jpg" alt="Activités">
-                    <div class="feature-overlay">
-                        <h3 class="category-label gold" style="margin-bottom: 15px;">ACTIVITÉS & LOISIRS</h3>
-                        <p style="color: #777777; margin-bottom: 25px;">Une équipe d'animation dynamique et professionnelle vous propose une multitude d'activités sportives.</p>
-                        <a href="#" class="teal-btn">Je découvre</a>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Galerie</span>
+                <h2 class="section-title">Découvrez nos espaces</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://www.seabelhotels.com/wp-content/uploads/2016/11/activit%C3%A9s5-1024x555.jpg" alt="Piscine">
+                    <div class="gallery-overlay">
+                        <h3>Piscine principale</h3>
                     </div>
                 </div>
-                <div class="feature-item">
-                    <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/004a8af6-c0a7-4725-9efc-ee8078784907-seabelhotels-com/assets/images/chambre-16.jpg" alt="Chambres">
-                    <div class="feature-overlay">
-                        <h3 class="category-label gold" style="margin-bottom: 15px;">VOTRE OASIS 4 ÉTOILES</h3>
-                        <p style="color: #777777; margin-bottom: 25px;">352 chambres réparties sur 7 petits bâtiments de style local disposant chacun jardin intérieur.</p>
-                        <a href="#" class="teal-btn">Je découvre</a>
+                <div class="gallery-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/db/20/4d/seabel-rym-beach.jpg?w=900&h=-1&s=1" alt="Chambre">
+                    <div class="gallery-overlay">
+                        <h3>Chambre Deluxe</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.seabelhotels.com/wp-content/uploads/2016/11/rym_baech_restaurant_plage-1000x1065.jpg" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant principal</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/jardinrym.png" alt="Jardin">
+                    <div class="gallery-overlay">
+                        <h3>Jardins méditerranéens</h3>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="wave-pattern" style="position: absolute; bottom: 0; left: 0; opacity: 0.3;"></div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="section-padding">
-        <div class="container" style="text-align: center;">
-            <span class="category-label">Témoignages</span>
-            <h2 class="section-title" style="margin-bottom: 50px;">Ce que disent nos clients</h2>
-            
-            <div class="testimonials-list">
-                <p class="quote-text">“L’hôtel avec accès direct à la plage est très accueillant. Le personnel est sympathique et serviable….”</p>
-                <p class="quote-text" style="margin-top: 30px;">“Nous avons passés un agréable séjour (15 jours) Tout le personnel de l hôtel est vraiment très gentil et serviable. Propreté de notre chambre impeccable…”</p>
-            </div>
-
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div style="display: flex; gap: 2px; margin-bottom: 5px;">
-                    <div style="width: 10px; height: 10px; background: #00aa6c; border-radius: 50%;"></div>
-                    <div style="width: 10px; height: 10px; background: #00aa6c; border-radius: 50%;"></div>
-                    <div style="width: 10px; height: 10px; background: #00aa6c; border-radius: 50%;"></div>
-                    <div style="width: 10px; height: 10px; background: #00aa6c; border-radius: 50%;"></div>
-                    <div style="width: 10px; height: 10px; background: #00aa6c; border-radius: 50%;"></div>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <span class="section-subtitle">Témoignages</span>
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <p class="quote">"Un hôtel magnifique, un personnel aux petits soins, un jardin exceptionnel."</p>
+                    <p class="author">Julie D. — TripAdvisor</p>
                 </div>
-                <div style="font-size: 11px; color: #777777; font-weight: 700; margin-bottom: 15px;">5598 avis</div>
-                <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/004a8af6-c0a7-4725-9efc-ee8078784907-seabelhotels-com/assets/images/logo_tripadvisor-5.png" alt="TripAdvisor" class="tripadvisor-logo">
+                <div class="testimonial-item">
+                    <p class="quote">"Parfait pour les familles. Les enfants ont adoré les activités et la piscine."</p>
+                    <p class="author">Marc L. — Booking.com</p>
+                </div>
+            </div>
+            <div class="tripadvisor-badge">
+                <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5/5</span>
+                </div>
             </div>
         </div>
     </section>
 
-   
-    <!-- FOOTER -->
-        <footer class="footer">
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.287501948656!2d10.568461315214455!3d35.94682378013797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130275759acf5a57%3A0x4c3cfea1df10b5a8!2sSeabel%20Aladin%20Hammamet!5e0!3m2!1sfr!2stn!4v1672748800000!5m2!1sfr!2stn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-overlay">
+                <p><i class="fas fa-map-marker-alt"></i> Djerba, Tunisie</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <span class="section-subtitle">Informations</span>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-details">
+                <div class="detail-item">
+                    <label><i class="fas fa-map-marker-alt"></i> Adresse</label>
+                    <p>Djerba – Tunisie</p>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <p>rym-beach@seabelhotels.com</p>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-phone"></i> Téléphone</label>
+                    <a href="tel:+21672308800" class="phone-number">+216 72 308 800</a>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-clock"></i> Réception</label>
+                    <p>24h/24 - 7j/7</p>
+                </div>
+            </div>
+            <a href="#" class="btn-contact">Nous contacter</a>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
         <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <a href="rymbeach.html">SEABEL Rym Beach</a>
+                    <a href="#press">Presse & News</a>
+                    <a href="#b2b">Portail B2B</a>
+                </div>
+                <div class="footer-column">
+                    <a href="aladin.html">SEABEL Aladin</a>
+                    <a href="#media">Photos & Vidéos</a>
+                    <a href="#protocol">Protocole sanitaire</a>
+                </div>
+                <div class="footer-column">
+                    <a href="alhambra.html">SEABEL Alhambra Beach Golf & Spa</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
             
             <div class="footer-bottom">
                 <form class="footer-form">
@@ -298,6 +291,13 @@
             </div>
         </div>
     </footer>
+<script>
+    function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        }
+</script>
 
 </body>
 </html>

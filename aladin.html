@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seabel Aladin - Hôtel familial à Hammamet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styleAladin.css">
+</head>
+<body>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-close" onclick="toggleMenu()">&times;</div>
+        <h2 class="menu-title">MENU PRINCIPAL</h2>
+        <nav class="mobile-nav">
+            <a href="#">Seabel Rym Beach</a>
+            <a href="#">Seabel Aladin</a>
+            <a href="#">Seabel Alhambra Beach Golf & Spa</a>
+            <a href="#">Activités & Divertissements</a>
+            <a href="#" class="special-offer">Offres Spéciales</a>
+            <a href="#">SPA & Bien-être</a>
+            <a href="#">Photos & Vidéos</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <div class="hamburger"><span></span><span></span><span></span></div>
+                <span>Menu</span>
+            </button>
+            <a href="#" class="logo">
+                <img src="https://www.seabelhotels.com/wp-content/uploads/2021/12/seabel_aladin_logo-13.png" alt="Seabel Aladin">
+            </a>
+            <div class="header-right">
+               
+                <a href="https://www.booking.com/hotel/tn/jet-eldo-aladin-djerba.fr.html?aid=356980&label=gog235jc-10CAso4gFCEHNlYWJlbC1yeW0tYmVhY2hIDVgDaOIBiAEBmAEzuAEZyAEM2AED6AEB-AEBiAIBqAIBuALXps_KBsACAdICJGIxM2U1Yjg1LWViOTMtNDkzMS04MDZlLTc3MjJlYjU2YjhmYdgCAeACAQ&sid=dec1ddc949395e96f713556b2f353f59&checkin=2026-01-08&checkout=2026-02-03&dest_id=278406&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1767728784&srpvid=91358b048dbb0875&type=total&ucfs=1&#no_availability_msg" class="btn-book-top">Réserver</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-sigle-box">
+                <div class="hero-location top">Hammamet</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Sigle" class="hero-sigle">
+                <div class="hero-location bottom">Tunisia</div>
+            </div>
+            <h1>Hôtel familial<br>à Hammamet</h1>
+            <p class="hero-subtitle">Séjournez au cœur d'un jardin méditerranéen</p>
+        </div>
+
+        <!-- Booking Bar -->
+        <div class="booking-bar-container">
+            <div class="booking-bar">
+                <div class="booking-field">
+                    <label>Arrivée</label>
+                    <div class="val"><span class="num">03</span> <span class="month">Janvier</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Départ</label>
+                    <div class="val"><span class="num">04</span> <span class="month">Janvier</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Chambres</label>
+                    <div class="val"><span class="num">01</span></div>
+                </div>
+                <div class="booking-field">
+                    <label>Adultes</label>
+                    <div class="val"><span class="num">02</span></div>
+                </div>
+                <button class="booking-submit">Vérifier la disponibilité</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container intro-grid">
+            <div class="intro-left">
+                <span class="section-subtitle">Seabel Aladin</span>
+                <h2 class="section-title">Un havre de paix<br><span class="highlight">familial</span></h2>
+            </div>
+            <div class="intro-right">
+                <p class="lead">Nichée dans un jardin méditerranéen de 8 hectares à Hammamet, une station balnéaire réputée de Tunisie...</p>
+                <p>Le Seabel Aladin vous offre le charme authentique d'un séjour avec tout le confort moderne, à deux pas d'une belle plage privée.</p>
+                <a href="#" class="btn-text">Découvrir l'hôtel <span>&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Nos atouts</span>
+                <h2 class="section-title">Pour un séjour inoubliable</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Plage privée</h3>
+                    <p>Une magnifique plage de sable fin accessible directement depuis l'hôtel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Piscines</h3>
+                    <p>Plusieurs piscines dont une piscine à débordement avec vue sur la mer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>SPA & Bien-être</h3>
+                    <p>Un espace dédié à la relaxation avec soins, hammam et sauna.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restauration</h3>
+                    <p>Plusieurs restaurants et bars pour varier les plaisirs culinaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Galerie</span>
+                <h2 class="section-title">Découvrez nos espaces</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Piscine">
+                    <div class="gallery-overlay">
+                        <h3>Piscine principale</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chambre">
+                    <div class="gallery-overlay">
+                        <h3>Chambre Deluxe</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant principal</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jardin">
+                    <div class="gallery-overlay">
+                        <h3>Jardins méditerranéens</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <span class="section-subtitle">Témoignages</span>
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <p class="quote">"Un hôtel magnifique, un personnel aux petits soins, un jardin exceptionnel."</p>
+                    <p class="author">Julie D. — TripAdvisor</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"Parfait pour les familles. Les enfants ont adoré les activités et la piscine."</p>
+                    <p class="author">Marc L. — Booking.com</p>
+                </div>
+            </div>
+            <div class="tripadvisor-badge">
+                <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5/5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.287501948656!2d10.568461315214455!3d35.94682378013797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130275759acf5a57%3A0x4c3cfea1df10b5a8!2sSeabel%20Aladin%20Hammamet!5e0!3m2!1sfr!2stn!4v1672748800000!5m2!1sfr!2stn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-overlay">
+                <p><i class="fas fa-map-marker-alt"></i> Hammamet Sud, Tunisie</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <span class="section-subtitle">Informations</span>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-details">
+                <div class="detail-item">
+                    <label><i class="fas fa-map-marker-alt"></i> Adresse</label>
+                    <p>Hammamet Sud – Tunisie</p>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <p>aladin@seabelhotels.com</p>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-phone"></i> Téléphone</label>
+                    <a href="tel:+21672308800" class="phone-number">+216 72 308 800</a>
+                </div>
+                <div class="detail-item">
+                    <label><i class="fas fa-clock"></i> Réception</label>
+                    <p>24h/24 - 7j/7</p>
+                </div>
+            </div>
+            <a href="#" class="btn-contact">Nous contacter</a>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <a href="#rym-beach">SEABEL Rym Beach</a>
+                    <a href="#press">Presse & News</a>
+                    <a href="#b2b">Portail B2B</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#aladin">SEABEL Aladin</a>
+                    <a href="#media">Photos & Vidéos</a>
+                    <a href="#protocol">Protocole sanitaire</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#alhambra">SEABEL Alhambra Beach Golf & Spa</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <form class="footer-form">
+                    <h3>Contact</h3>
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+                
+                <div class="footer-left">
+                    <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/bacaa8ed-efd0-432f-a0ac-5a712ea986ef-seabelhotels-com/assets/images/seabel_hotels_logo-11.svg" alt="Free Wissem Hotels" class="footer-logo">
+                    
+                    
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/seabelhotels" class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                        </a>
+                        <a href="https://x.com/seabelhotels" class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/seabelhotels/" class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCIEZ0wWvn6tGSqJVrfM0qOQ" class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="copyright">
+                    © 2025 SEABEL Hotels Tunisia
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        }
+</script>
+
+</body>
+</html>
