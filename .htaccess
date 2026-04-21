@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+</IfModule>
+
+<FilesMatch "\.(sql|log|cnf|env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

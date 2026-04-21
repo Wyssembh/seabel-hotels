@@ -1,0 +1,5 @@
+.git
+.env
+deploy.sh
+.vscode
+src/db.sql
